@@ -422,8 +422,8 @@
 
 /* Begin PBXFileReference section */
 		041A50E017944DCD000480DD /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python; sourceTree = "<group>"; };
-		04442B4F17BF75BD00D3E3D1 /* libPython.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPython.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		04442CED17BF765A00D3E3D1 /* libPythonMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPythonMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04442B4F17BF75BD00D3E3D1 /* libPython.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPython.a; path = liblibPython.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04442CED17BF765A00D3E3D1 /* libPythonMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPythonMac.a; path = liblibPythonMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449BA5A1787C64E00022D0E /* Python-ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Python-ast.h"; sourceTree = "<group>"; };
 		0449BA5B1787C64E00022D0E /* Python.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
 		0449BA5C1787C64E00022D0E /* abstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstract.h; sourceTree = "<group>"; };
@@ -1835,9 +1835,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../libPython/Include,
+					../libPython,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1859,9 +1863,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../libPython/Include,
+					../libPython,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
