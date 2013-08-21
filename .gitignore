@@ -2,3 +2,9 @@
 .DS_Store
 
 *.xcuserstate
+
+python-ios.xcworkspace/xcuserdata/fancyzero.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcbkptlist
+
+python-ios.xcworkspace/xcuserdata/fancyzero.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
