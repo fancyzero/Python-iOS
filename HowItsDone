@@ -1,0 +1,19 @@
+    Goto Python-2.7.5, and "./configure" this will config for mac OSX plaform, but still can make next of your steps easier.
+  
+    Create a static library project, then add all python file into project with directory structure.
+    
+    while( build_not_successed )
+    {
+        Try to build it, and you will found some source file are not for iOS platform, remove these files, and some other files
+      failed to compile because missing other 3rd party libs, remove it from the project , or provide the libs.
+    }
+    
+    you will get a python interpet with some useful builtin modules.
+    
+    manually edit the Modules/config.c to register builtin modules, you see how, when you open the config.c it's easy to understand
+    module "zlib" must be registered in order to import for a zip file.
+    
+    and in python/libs/site.py there comment line "known_paths = addusersitepackages(known_paths)" , that depends a module called "_sysconfigdata", this module is generated when you make python in commandline, so this funciton call should be disabled
+  
+    that's all I remember...
+    
