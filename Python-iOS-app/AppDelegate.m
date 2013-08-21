@@ -41,7 +41,7 @@
     Py_SetPythonHome(home);
     Py_Initialize();
     
-    PyRun_SimpleString("print 'hello'");//say hello
+    PyRun_SimpleString("print 'hello'");//say hello see debug output :)    
     
     return YES;
 }
