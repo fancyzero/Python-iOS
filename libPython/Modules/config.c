@@ -39,6 +39,7 @@ extern "C" {
     extern void init_functools(void);
     extern void initbinascii(void);
     extern void initzlib(void);
+    extern void initmath(void);
     /* -- ADDMODULE MARKER 1 -- */
     
     extern void PyMarshal_Init(void);
@@ -48,6 +49,7 @@ extern "C" {
     extern void _PyWarnings_Init(void);
     
     struct _inittab _PyImport_Inittab[] = {
+        {"math", initmath},
         {"zlib", initzlib},
         {"binascii", initbinascii},
         {"_struct", init_struct},
