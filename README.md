@@ -1,7 +1,7 @@
-libPython
+Python-iOS
 =========
 
- Python static library XCode project with builting modules
+ Python static library XCode project with built-in modules
  based on Python-2.7.5
  
  Run Python on iOS
