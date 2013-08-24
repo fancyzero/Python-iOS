@@ -10,7 +10,7 @@
     
     you will get a python interpet with some useful builtin modules.
     
-    manually edit the Modules/config.c to register builtin modules, you see how, when you open the config.c it's easy to understand
+    manually edit the Modules/config.c to register built-in modules, you see how, when you open the config.c it's easy to understand
     module "zlib" must be registered in order to import for a zip file.
     
     and in python/libs/site.py there comment line "known_paths = addusersitepackages(known_paths)" , that depends a module called "_sysconfigdata", this module is generated when you make python in commandline, so this funciton call should be disabled
